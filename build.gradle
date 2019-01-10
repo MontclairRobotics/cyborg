@@ -13,7 +13,7 @@ plugins {
 }
 
 group 'montclairrobotics'
-version '1.0-SNAPSHOT'
+version '0.1'
 
 
 // Apply the java-library plugin to add support for Java Library
