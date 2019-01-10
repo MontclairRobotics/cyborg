@@ -4,6 +4,7 @@ import java.util.ArrayList;
 
 import edu.wpi.first.networktables.NetworkTable;
 import edu.wpi.first.networktables.NetworkTableInstance;
+import edu.wpi.first.wpilibj.TimedRobot;
 import org.montclairrobotics.cyborg.behaviors.CBBehavior;
 import org.montclairrobotics.cyborg.controllers.CBRobotController;
 import org.montclairrobotics.cyborg.data.CBControlData;
@@ -23,7 +24,9 @@ import edu.wpi.first.wpilibj.smartdashboard.SmartDashboard;
  * appropriate Cyborg operations instead.
  * @author rich
  */
-public abstract class Cyborg extends IterativeRobot {
+
+//WPI docs mention that iterative is depricated and drop in replacement is timed
+public abstract class Cyborg extends TimedRobot {
 
 	public static CBHardwareAdapter hardwareAdapter;
 	public static boolean simulationActive;
